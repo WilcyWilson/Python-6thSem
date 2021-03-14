@@ -15,6 +15,9 @@ print(soup.get_text())
 # Prints all the Texts in the webpage excluding html tags
 for p in soup.find_all('img'):
 	print(p.get('src'))
+# find_all('img') return a list of all instances of that particular tag called 'img'
+# The print(p.get('src')) prints the value in the src attribute of the img tags.
+
 
 # Use an HTML Parser for Web Scraping in Python
 # HTML parsers are software for automated Hypertext Markup Language parsing. 
